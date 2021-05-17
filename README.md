@@ -1,3 +1,14 @@
+# About this fork
+
+The original mongo-backup hasn't been touched in years, and all the
+dependencies are out of date. It built and ran, but didn't connect to a
+newer version of mongo.
+
+This is all experimental, but maybe will work. My planned changes:
+
+1. update dependencies and Dockerfile to newer versions
+2. add env variable to specify collections to back up
+
 # mongo-backup
 >Automated backups for MongoDB containers
 
