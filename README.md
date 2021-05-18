@@ -9,6 +9,21 @@ This is all experimental, but maybe will work. My planned changes:
 1. update dependencies and Dockerfile to newer versions
 2. add env variable to specify collections to back up
 
+Update: this doesn't work yet. It may not be worth more effort.
+
+```
+[2021/05/18 12:54:43][error] CLI::Error
+[2021/05/18 12:54:43][error] --- Wrapped Exception ---
+[2021/05/18 12:54:43][error] Config::Error: Invalid Configuration File
+[2021/05/18 12:54:43][error]   The configuration file at '/app/Backup/config.rb'
+[2021/05/18 12:54:43][error]   does not appear to be a Backup v5.x configuration file.
+[2021/05/18 12:54:43][error]   If you have upgraded to v5.x from a previous version,
+[2021/05/18 12:54:43][error]   you need to upgrade your configuration file.
+[2021/05/18 12:54:43][error]   Please see the instructions for upgrading in the Backup documentation.
+```
+
+A different strategy may be to use this tool instead: https://github.com/stefanprodan/mgob
+
 # mongo-backup
 >Automated backups for MongoDB containers
 
